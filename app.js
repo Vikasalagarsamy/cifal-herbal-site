@@ -7,14 +7,27 @@
   '<header class="nav"><div class="wrap nav-inner">'+
     '<a href="/" class="brand"><img src="/assets/brand/logo.jpg" alt="Cifal Herbal logo"/>'+
       '<div><div class="bt">Cifal Herbal</div><div class="bs">Citrus &amp; Herbal Extracts</div></div></a>'+
-    '<nav class="links">'+
+    '<nav class="links" id="navLinks">'+
       '<a href="/about.html"'+active('about')+'>About</a>'+
       '<a href="/ceo.html"'+active('ceo')+'>Leadership</a>'+
-      '<a href="/products.html"'+active('products')+'>Products</a>'+
+      '<div class="dropdown">'+
+        '<a href="/products.html" class="drop-toggle'+(page==='products'?' active':'')+'">Products <span class="caret">▾</span></a>'+
+        '<div class="submenu">'+
+          '<a href="/products/citrus.html">Citrus Lime Products</a>'+
+          '<a href="/products/herbal.html">Herbal Extracts</a>'+
+          '<a href="/products/nutraceuticals.html">Nutraceuticals</a>'+
+          '<a href="/products/spray-dried-powders.html">Spray Dried Powders</a>'+
+          '<a href="/products/dehydrated.html">Dehydrated Fruits &amp; Vegetables</a>'+
+          '<a href="/products/cattle-feed.html">Cattle Feed Supplements</a>'+
+        '</div>'+
+      '</div>'+
       '<a href="/awards.html"'+active('awards')+'>Awards</a>'+
       '<a href="/contact.html"'+active('contact')+'>Contact</a>'+
     '</nav>'+
-    '<a href="/contact.html" class="btn btn-primary">Request a quote</a>'+
+    '<div class="nav-right">'+
+      '<a href="/contact.html" class="btn btn-primary nav-quote">Request a quote</a>'+
+      '<button class="menu-toggle" aria-label="Toggle menu" onclick="document.body.classList.toggle(\'nav-open\')">☰</button>'+
+    '</div>'+
   '</div></header>';
 
   var footer =
