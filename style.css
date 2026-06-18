@@ -1,4 +1,16 @@
 @font-face{
+  font-family:"Satoshi";
+  src:url("/assets/fonts/Satoshi-Variable.woff2") format("woff2"),
+      url("/assets/fonts/Satoshi-Variable.woff") format("woff");
+  font-weight:300 900;font-style:normal;font-display:swap;
+}
+@font-face{
+  font-family:"Satoshi";
+  src:url("/assets/fonts/Satoshi-VariableItalic.woff2") format("woff2"),
+      url("/assets/fonts/Satoshi-VariableItalic.woff") format("woff");
+  font-weight:300 900;font-style:italic;font-display:swap;
+}
+@font-face{
   font-family:"Gambetta";
   src:url("/assets/fonts/Gambetta-Variable.woff2") format("woff2"),
       url("/assets/fonts/Gambetta-Variable.woff") format("woff");
@@ -22,8 +34,8 @@
   --ink:#16241B;
   --ink-soft:#3F4E44;
   --line:rgba(16,42,27,.14);
-  --serif:"Gambetta",Georgia,serif;
-  --sans:"Gambetta",Georgia,serif;
+  --serif:"Satoshi","Gambetta",system-ui,sans-serif;
+  --sans:"Satoshi",system-ui,sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -279,3 +291,10 @@ footer ul li a:hover{color:var(--lime)}
   .stat{border-right:none;border-bottom:1px solid var(--line)}
   .ai-fab .ft{display:none}
 }
+
+/* --- Satoshi weight tuning (heavier, so it doesn't read 'lite') --- */
+body{font-weight:500}
+h1,h2,h3,h4,.hero h1,.page-hero h1,.sec-head h2,.cta h2,.stat .n,.hero-badge .ht,.brand .bt{font-weight:700 !important}
+.prose h3,.card h3,.proc h3,.award h4,.ceo .sig .nm{font-weight:600 !important}
+.eyebrow,.crumb,.btn,nav.links a,.dropdown>a,.dl .v b{font-weight:600}
+.about-copy .lead,.ceo blockquote,.hero p.lead,.page-hero p.intro,.cta p{font-weight:500}
