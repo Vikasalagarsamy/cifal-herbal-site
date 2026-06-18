@@ -1,3 +1,15 @@
+@font-face{
+  font-family:"Gambetta";
+  src:url("/assets/fonts/Gambetta-Variable.woff2") format("woff2"),
+      url("/assets/fonts/Gambetta-Variable.woff") format("woff");
+  font-weight:300 700;font-style:normal;font-display:swap;
+}
+@font-face{
+  font-family:"Gambetta";
+  src:url("/assets/fonts/Gambetta-VariableItalic.woff2") format("woff2"),
+      url("/assets/fonts/Gambetta-VariableItalic.woff") format("woff");
+  font-weight:300 700;font-style:italic;font-display:swap;
+}
 :root{
   --paper:#F4F0E6;
   --paper-2:#ECE6D6;
@@ -10,8 +22,8 @@
   --ink:#16241B;
   --ink-soft:#3F4E44;
   --line:rgba(16,42,27,.14);
-  --serif:"Fraunces",Georgia,serif;
-  --sans:"Hanken Grotesk",system-ui,sans-serif;
+  --serif:"Gambetta",Georgia,serif;
+  --sans:"Gambetta",Georgia,serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
