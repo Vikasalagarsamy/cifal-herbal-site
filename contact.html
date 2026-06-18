@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Cifal Herbal</title>
+<meta name="description" content="Contact Cifal Herbal in Gudur, Andhra Pradesh — request specifications, samples and quotes for citrus and herbal ingredients." />
+<link rel="icon" href="/assets/brand/logo.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body data-page="contact">
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="crumb"><a href="/">Home</a> · Contact</div>
+    <span class="eyebrow">Get in touch</span>
+    <h1>Request specifications &amp; samples.</h1>
+    <p class="intro">Tell us the product, grade and quantity you need. Our team responds with technical data sheets, certificates and samples — usually within one business day.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <div class="form-card">
+        <form onsubmit="enquire(event)">
+          <div class="field-row">
+            <div class="field"><label>Name</label><input required name="name" placeholder="Your full name"/></div>
+            <div class="field"><label>Company</label><input name="company" placeholder="Company name"/></div>
+          </div>
+          <div class="field-row">
+            <div class="field"><label>Email</label><input required type="email" name="email" placeholder="you@company.com"/></div>
+            <div class="field"><label>Phone / WhatsApp</label><input name="phone" placeholder="+91…"/></div>
+          </div>
+          <div class="field-row">
+            <div class="field"><label>Product of interest</label>
+              <select name="product">
+                <option>Citrus Lime Products</option>
+                <option>Herbal Extracts</option>
+                <option>Nutraceuticals</option>
+                <option>Spray Dried Powders</option>
+                <option>Dehydrated Fruits &amp; Vegetables</option>
+                <option>Cattle Feed Supplements</option>
+              </select>
+            </div>
+            <div class="field"><label>Quantity (approx.)</label><input name="qty" placeholder="e.g. 500 kg / month"/></div>
+          </div>
+          <div class="field"><label>Message</label><textarea name="message" placeholder="Grade, specification, destination country, any other details…"></textarea></div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Send enquiry</button>
+          <p class="form-note" id="formNote">Or message us directly on WhatsApp — we typically reply the same day.</p>
+        </form>
+      </div>
+    </div>
+
+    <div class="reveal contact-info">
+      <div class="ci"><div class="k">Factory</div><div class="v">5th KM, Gudur–Venkatagiri Road, Goginenipuram, Gudur, Nellore (Dist.), Andhra Pradesh, India – 524103</div></div>
+      <div class="ci"><div class="k">Office</div><div class="v">Kamala Bhavan, 15/337-16, Varada Nagar, Gudur, Nellore (Dist.), Andhra Pradesh, India – 524101</div></div>
+      <div class="ci"><div class="k">Call</div><div class="v"><a href="tel:+919494709945">+91 94947 09945</a> · <a href="tel:+919849056145">+91 98490 56145</a></div></div>
+      <div class="ci"><div class="k">Email</div><div class="v"><a href="mailto:sagar@cifalherbal.com">sagar@cifalherbal.com</a><br/><a href="mailto:marketing_herbal@cifalherbal.com">marketing_herbal@cifalherbal.com</a><br/><a href="mailto:info@cifalherbal.com">info@cifalherbal.com</a></div></div>
+      <div class="ci"><div class="k">Attention</div><div class="v">Vidyasagar Yalavarthy, Managing Director</div></div>
+    </div>
+  </div>
+</section>
+
+<script src="/app.js"></script>
+<script>
+function enquire(e){
+  e.preventDefault();
+  var f=e.target, n=document.getElementById('formNote');
+  var body=encodeURIComponent('Name: '+f.name.value+'\nCompany: '+f.company.value+'\nEmail: '+f.email.value+'\nPhone: '+f.phone.value+'\nProduct: '+f.product.value+'\nQuantity: '+f.qty.value+'\n\n'+f.message.value);
+  n.style.color='var(--green)';
+  n.textContent='Thank you — opening your email app to send this enquiry to our team…';
+  window.location.href='mailto:sagar@cifalherbal.com?subject='+encodeURIComponent('Product enquiry — '+f.product.value)+'&body='+body;
+}
+</script>
+</body>
+</html>
