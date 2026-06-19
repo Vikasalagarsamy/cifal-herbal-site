@@ -172,6 +172,13 @@ section{padding:104px 0}
 .proc h3{font-family:var(--serif);font-size:21px;font-weight:500;margin:14px 0 10px}
 .proc p{font-size:14.5px;color:var(--ink-soft)}
 
+/* WHY (home value props) */
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-bottom:30px}
+.why{border-top:2px solid var(--lime-deep);padding-top:20px}
+.why h3{font-family:var(--serif);font-size:21px;font-weight:600;margin-bottom:10px}
+.why p{font-size:15px;color:var(--ink-soft)}
+@media(max-width:760px){.why-grid{grid-template-columns:1fr;gap:8px}.why{padding-top:16px}}
+
 /* CERT + AWARDS */
 .split{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:start}
 .cert-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
