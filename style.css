@@ -173,6 +173,14 @@ section{padding:104px 0}
 .proc h3{font-family:var(--serif);font-size:21px;font-weight:500;margin:14px 0 10px}
 .proc p{font-size:14.5px;color:var(--ink-soft)}
 
+/* GALLERY (infrastructure) */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.gallery figure{margin:0}
+.gallery img{width:100%;height:200px;object-fit:cover;border-radius:14px;border:1px solid var(--line)}
+.gallery figcaption{font-size:13px;color:var(--ink-soft);margin-top:9px}
+@media(max-width:860px){.gallery{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.gallery{grid-template-columns:1fr}}
+
 /* WHY (home value props) */
 .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-bottom:30px}
 .why{border-top:2px solid var(--lime-deep);padding-top:20px}

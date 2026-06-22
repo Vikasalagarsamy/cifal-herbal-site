@@ -34,7 +34,7 @@
   '<footer><div class="wrap"><div class="foot-grid">'+
     '<div><h5>Cifal Herbal</h5><p class="tag">India’s leading processor of citrus products &amp; herbal extracts. Processing garden-fresh limes and botanicals since 1985.</p></div>'+
     '<div><div class="fh">Navigate</div><ul>'+
-      '<li><a href="/about.html">About</a></li><li><a href="/ceo.html">Leadership</a></li>'+
+      '<li><a href="/about.html">About</a></li><li><a href="/about/infrastructure/">Infrastructure</a></li><li><a href="/ceo.html">Leadership</a></li>'+
       '<li><a href="/products.html">Products</a></li><li><a href="/awards.html">Awards</a></li>'+
       '<li><a href="/contact.html">Contact</a></li></ul></div>'+
     '<div><div class="fh">Products</div><ul>'+
