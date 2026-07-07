@@ -9,6 +9,7 @@
       '<div><div class="bt">Cifal Herbal</div><div class="bs">Citrus &amp; Herbal Extracts</div></div></a>'+
     '<nav class="links" id="navLinks">'+
       '<a href="/about.html"'+active('about')+'>About</a>'+
+      '<a href="/about/infrastructure/"'+active('infrastructure')+'>Infrastructure</a>'+
       '<a href="/ceo.html"'+active('ceo')+'>Leadership</a>'+
       '<div class="dropdown">'+
         '<a href="/products.html" class="drop-toggle'+(page==='products'?' active':'')+'">Products <span class="caret">▾</span></a>'+
